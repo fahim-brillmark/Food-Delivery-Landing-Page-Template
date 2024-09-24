@@ -251,11 +251,15 @@ nav.top-nav {
   padding-bottom: 4rem;
 }
 
+.banner-right { 
+  align-self: flex-end;
+}
+
 .banner-right img {
   width: 100%;
   filter: drop-shadow(-20px 26px 80px rgba(0, 0, 0, 0.2));
   position: relative;
-  top: 4px;
+  top: 3px;
 }
 
 .delivery-options {
@@ -503,6 +507,10 @@ nav.top-nav {
     flex-direction: column;
     padding-top: 2rem;
     gap: 12px;
+  }
+
+  .banner-right { 
+    align-self: center;
   }
 
   .banner-header,
