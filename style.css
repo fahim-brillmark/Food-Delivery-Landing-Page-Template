@@ -11,6 +11,7 @@
 
 body {
   font-family: "Source Sans Pro", sans-serif;
+  padding-bottom: 1000px;
 }
 
 /* Nav Stylings */
@@ -56,8 +57,8 @@ nav.top-nav {
   text-align: center;
   color: #424242;
 }
-.location-icon-wrapper { 
-    padding: 0 4px;
+.location-icon-wrapper {
+  padding: 0 4px;
 }
 
 .location {
@@ -127,6 +128,85 @@ nav.top-nav {
   color: transparent;
 }
 
+/* Flash Deals Cards Stylings */
+
+.flash-deals { 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.discount {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  left: 0;
+  bottom: 4px;
+  background: #ffb30e;
+  padding: 10px 18px 11px 18px;
+  border-radius: 0px 32px 0px 14px;
+}
+
+.discount-amount {
+  font-size: 68px;
+  font-weight: 700;
+  line-height: 72.08px;
+  color: #ffffff;
+}
+
+.percentage {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.percent-symbol {
+  font-size: 35px;
+  font-weight: 700;
+  line-height: 42px;
+  color: #ffffff;
+}
+
+.off-text {
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 26.4px;
+  color: #ffffff;
+}
+
+.flash-deals-img-wrapper {
+  position: relative;
+}
+
+.flash-deals-img-wrapper img {
+  width: 100%;
+  border-radius: 16px;
+}
+
+.flash-deals-cards-details { 
+  margin-top: 15px;
+}
+
+.flash-deals-cards-title {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 26.4px;
+}
+
+.duration {
+  background: #f1722833;
+  color: #f17228;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 26.4px;
+  padding: 8px 16px;
+  border-radius: 8px;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+/* Desktop Stylings */
 @media (max-width: 1700px) {
   .container {
     padding: 0 100px;
@@ -156,6 +236,23 @@ nav.top-nav {
 @media (max-width: 1165px) {
   .container {
     padding: 0 20px;
+  }
+}
+
+@media (max-width: 916px) {
+  .discount { 
+     padding: 7px 15px 8px 15px;
+  }
+  .discount-amount { 
+    font-size: 50px;
+  }
+
+  .percent-symbol { 
+    font-size: 25;
+  }
+
+  .off-text { 
+    font-size: 15px;
   }
 }
 
@@ -189,5 +286,9 @@ nav.top-nav {
 
   .login-button-text {
     font-size: 15px;
+  }
+
+  .flash-deals { 
+    flex-direction: column;
   }
 }
