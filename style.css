@@ -1,0 +1,193 @@
+/* Default Stylings */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  padding: 0 220px;
+}
+
+body {
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+/* Nav Stylings */
+
+nav.top-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.logo-wrapper img {
+  width: 100%;
+}
+
+.search-food-and-login-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+.delivery-location-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-family: "Open Sans", sans-serif;
+}
+.deliver-to-text {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 18px;
+  text-align: center;
+  color: #424242;
+}
+
+.current-location-text {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 25.2px;
+  text-align: center;
+  color: #424242;
+}
+.location-icon-wrapper { 
+    padding: 0 4px;
+}
+
+.location {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 25.2px;
+  text-align: center;
+  color: #424242;
+}
+
+.search-food-wrapper {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.search-icon {
+  position: absolute;
+  left: 28px;
+}
+
+.nav-search {
+  font-family: "Source Sans Pro", sans-serif;
+  border: 0;
+  outline: none;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 18px;
+  text-align: center;
+  color: #424242;
+  padding: 0.5rem 0;
+}
+
+.nav-search::placeholder {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 18px;
+  text-align: center;
+  color: #424242;
+}
+
+.login-wrapper {
+  padding: 14px 24px;
+  box-shadow: 0px 20px 40px 0px #ffae004a;
+  box-shadow: 0px 5px 10px 0px #ffae0042;
+  border-radius: 8px;
+}
+
+.login-wrapper button {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border: 0;
+  outline: 0;
+  background: none;
+}
+
+.login-button-text {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 18px;
+  text-align: center;
+  background: linear-gradient(92.84deg, #ffb800 -47.72%, #ff8a00 136.81%);
+  background-clip: text;
+  color: transparent;
+}
+
+@media (max-width: 1700px) {
+  .container {
+    padding: 0 100px;
+  }
+}
+@media (max-width: 1436px) {
+  .container {
+    padding: 0 40px;
+  }
+}
+
+@media (max-width: 1305px) {
+  .search-food-and-login-wrapper {
+    gap: 0;
+  }
+  .logo-wrapper {
+    width: 170px;
+  }
+  .deliver-to-text,
+  .current-location-text,
+  .location,
+  .nav-search::placeholder {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 1165px) {
+  .container {
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: 994px) {
+  .delivery-location-wrapper {
+    gap: 0;
+  }
+}
+
+/* Mobile Stylings */
+
+@media (max-width: 767px) {
+  .container {
+    padding: 0 10px;
+  }
+  nav.top-nav {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .delivery-location-wrapper {
+    gap: 10px;
+  }
+
+  .deliver-to-text,
+  .current-location-text,
+  .location,
+  .nav-search::placeholder {
+    font-size: 12px;
+  }
+
+  .login-button-text {
+    font-size: 15px;
+  }
+}
