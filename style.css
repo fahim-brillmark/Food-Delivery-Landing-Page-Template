@@ -24,6 +24,10 @@ nav.top-nav {
   padding-bottom: 16px;
 }
 
+.logo-wrapper { 
+  width: 20%;
+}
+
 .logo-wrapper img {
   width: 100%;
 }
@@ -32,7 +36,7 @@ nav.top-nav {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 30px;
+  gap: 5px;
 }
 .delivery-location-wrapper {
   display: flex;
@@ -58,7 +62,7 @@ nav.top-nav {
   color: #424242;
 }
 .location-icon-wrapper {
-  padding: 0 4px;
+  padding: 0 8px;
 }
 
 .location {
@@ -115,6 +119,7 @@ nav.top-nav {
   border: 0;
   outline: 0;
   background: none;
+  cursor: pointer;
 }
 
 .login-button-text {
@@ -133,8 +138,8 @@ nav.top-nav {
 .flash-deals {
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 20px;
+  justify-content: space-between;
+  gap: 10px;
 }
 
 .discount {
@@ -241,6 +246,7 @@ nav.top-nav {
   border-radius: 16px;
   padding: 20px;
   position: relative;
+  max-width: 853px;
 }
 
 .banner-left {
@@ -269,11 +275,22 @@ nav.top-nav {
   padding-bottom: 20px;
 }
 
-.delivery-options button:first-child {
-  background: #f172281a;
+.delivery-options button {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 18px;
+  font-family: "Source Sans Pro", sans-serif;
+  color: #757575;
   padding: 10px 20px;
   border-radius: 8px;
+  cursor: pointer;
 }
+
+.delivery-options button.active { 
+  color: #F17228;
+  background: #F172281A;
+}
+
 
 .divider {
   border-top: 1px solid #eeeeee;
@@ -290,20 +307,7 @@ nav.top-nav {
   gap: 6px;
 }
 
-.parcel-deliver {
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 18px;
-  font-family: "Source Sans Pro", sans-serif;
-}
 
-.parcel-pickup {
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 18px;
-  font-family: "Source Sans Pro", sans-serif;
-  color: #757575;
-}
 
 .enter-address {
   display: flex;
@@ -668,7 +672,7 @@ button.splide__arrow.splide__arrow--prev {
 
   .banner {
     flex-direction: column;
-    padding-top: 2rem;
+    padding-top: 1rem !important;
     gap: 12px;
   }
 
