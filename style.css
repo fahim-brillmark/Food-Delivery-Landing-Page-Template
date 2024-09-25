@@ -518,6 +518,140 @@ button.splide__arrow.splide__arrow--prev {
   left: -5%;
 }
 
+.featured-restaurants {
+  margin-top: 3rem;
+}
+
+.featured-restaurants-card-wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  row-gap: 43px;
+  column-gap: 16px;
+}
+
+.featured-restaurants-img-wrapper {
+  position: relative;
+}
+
+.featured-restaurants-img-wrapper img {
+  width: 100%;
+}
+
+.featured-restaurants-card {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.featured-restaurants-title {
+  font-size: 43px;
+  font-weight: 700;
+  line-height: 48.16px;
+  text-align: center;
+  color: #212121;
+  margin-bottom: 6rem;
+}
+
+.featured-restaurants-img-wrapper img {
+  border-radius: 16px;
+}
+
+.restaurants-logo-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.restaurant-star {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.restaurant-name {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 26.4px;
+  color: #424242;
+}
+
+.restaruant-rating {
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 26.4px;
+  color: #ffb30e;
+}
+
+.restaurants-open-tomorrow {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 26.4px;
+  color: #f17228;
+  background: #f1722833;
+  padding: 8px 16px;
+  border-radius: 16px;
+  max-width: 197px;
+}
+.restaurants-open-now {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 26.4px;
+  color: #79b93c;
+  background: #79b93c33;
+  padding: 8px 16px;
+  border-radius: 16px;
+  max-width: 133px;
+}
+
+.badges {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  position: absolute;
+  top: 28px;
+  left: 26px;
+}
+
+.discount-badge,
+.fast-badge {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 26.4px;
+  color: #ffffff;
+  padding: 8px 16px;
+  border-radius: 8px;
+}
+
+.discount-badge {
+  background: #f17228;
+}
+
+.fast-badge {
+  background: #ffb30e;
+}
+
+.view-all-button-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.view-all-button {
+  background: none;
+  border: none;
+  background: linear-gradient(97.86deg, #ffba26 -8.95%, #ff9a0e 109.24%);
+  box-shadow: 0px 5px 10px 0px #ffae0042;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 18px;
+  text-align: center;
+  padding: 20px 45px;
+  border-radius: 14px;
+  color: #ffffff;
+  margin-top: 8rem;
+  cursor: pointer;
+}
+
 /* Desktop Stylings */
 @media (max-width: 1700px) {
   .container {
@@ -539,6 +673,12 @@ button.splide__arrow.splide__arrow--prev {
 
   .splide__arrow {
     padding: 0 !important;
+  }
+}
+
+@media (max-width: 1350px) {
+  .featured-restaurants-card-wrapper {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
@@ -602,6 +742,12 @@ button.splide__arrow.splide__arrow--prev {
 
   .banner-text {
     font-size: 19px;
+  }
+}
+
+@media (max-width: 1150px) {
+  .featured-restaurants-card-wrapper {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
@@ -760,5 +906,12 @@ button.splide__arrow.splide__arrow--prev {
 
   button.splide__arrow.splide__arrow--prev {
     left: 0;
+  }
+
+  .featured-restaurants-card-wrapper {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .view-all-button {
+    margin-top: 3rem;
   }
 }
