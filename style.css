@@ -762,6 +762,63 @@ button.splide__arrow.splide__arrow--prev {
   border-radius: 8px;
   color: #ffffff;
 }
+
+.features-and-install-app {
+  margin-top: 8rem;
+  background: #feefd0;
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+  padding-left: calc(196px + 1.5vw);
+  padding-right: calc(196px + 1.5vw);
+}
+
+/* .features-and-install-app-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+} */
+
+.features {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ffffff;
+  padding: 55px;
+  border-radius: 46px;
+  gap: 80px;
+}
+
+.features img {
+  width: 100%;
+}
+
+.feature {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.last-feature {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.feature-divider {
+  width: 2px;
+  height: 96px;
+  background-color: #cfcfcf;
+}
+
+.feature-text {
+  font-size: 35px;
+  font-weight: 700;
+  line-height: 42px;
+  background: linear-gradient(92.84deg, #fb3c00 -47.72%, #ffb800 136.81%);
+  background-clip: text;
+  color: transparent;
+}
 /* Desktop Stylings */
 @media (max-width: 1700px) {
   .container {
@@ -783,6 +840,47 @@ button.splide__arrow.splide__arrow--prev {
 
   .splide__arrow {
     padding: 0 !important;
+  }
+}
+
+@media (max-width: 1400px) {
+  .feature-text {
+    font-size: 20px;
+  }
+
+  .features {
+    gap: 24px;
+    padding: 40px;
+    justify-content: space-evenly;
+  }
+
+  .features img {
+    width: 50px;
+  }
+
+  .feature-text {
+    text-align: center;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 997px) {
+  .features-and-install-app {
+    padding-left: 65px;
+    padding-right: 65px;
+  }
+}
+
+@media (min-width: 1401px) and (max-width: 1733px) {
+  .features img {
+    width: 90px;
+  }
+
+  .feature-text {
+    font-size: 26px;
+  }
+
+  .features {
+    gap: 60px;
   }
 }
 
@@ -1072,5 +1170,32 @@ button.splide__arrow.splide__arrow--prev {
 
   .deals-text {
     font-size: 15px;
+  }
+
+  .features {
+    flex-direction: column;
+    padding: 25px;
+    border-radius: 25px;
+    gap: 27px;
+  }
+
+  .feature,
+  .last-feature {
+    flex-direction: column;
+  }
+
+  .feature-divider {
+    height: 2px;
+    width: 100%;
+    background-color: #cfcfcf;
+  }
+
+  .features img {
+    width: 100%;
+  }
+
+  .features-and-install-app {
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
