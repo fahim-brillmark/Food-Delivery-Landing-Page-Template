@@ -653,7 +653,6 @@ button.splide__arrow.splide__arrow--prev {
 }
 
 .cta-section {
-  min-height: 400px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -661,7 +660,7 @@ button.splide__arrow.splide__arrow--prev {
   align-items: center;
   margin-top: 6rem;
   background-image: url("images/CTA-bg.png");
-  background-size: 100vw 50vh;
+  background-size: 100% 100%;
   background-repeat: no-repeat;
   padding: 5rem 0;
 }
