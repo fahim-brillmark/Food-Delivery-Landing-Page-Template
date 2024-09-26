@@ -11,7 +11,7 @@
 
 body {
   font-family: "Source Sans Pro", sans-serif;
-  padding-bottom: 100px;
+  padding-bottom: 50px;
 }
 
 /* Nav Stylings */
@@ -157,10 +157,9 @@ nav.top-nav {
 /* Flash Deals Cards Stylings */
 
 .flash-deals {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 10px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 12px;
 }
 
 .discount {
@@ -480,6 +479,7 @@ nav.top-nav {
   font-weight: 700;
   line-height: 26.4px;
   color: #212121;
+  margin-bottom: 11px;
 }
 
 .popular-items-button {
@@ -652,6 +652,80 @@ button.splide__arrow.splide__arrow--prev {
   cursor: pointer;
 }
 
+/* Search by food section */
+
+.search-by-food {
+  background: #fefaf1;
+  padding-top: 7rem !important;
+  padding-bottom: 6rem !important;
+  margin-top: 4rem;
+}
+
+.food {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+  padding: 20px;
+}
+
+.food img {
+  width: 100%;
+  border-radius: 50%;
+}
+.search-by-food-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 4rem;
+}
+
+.search-by-food-title {
+  font-size: 43px;
+  font-weight: 700;
+  line-height: 48.16px;
+
+  color: #212121;
+}
+
+.search-by-food-view-all,
+.search-by-food-chevron {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 18px;
+  color: #ffb30e;
+}
+
+.search-by-food-chevron {
+  margin-left: 5px;
+}
+
+.search-by-food-splide__arrows {
+  display: flex;
+}
+.search-by-food-slider-button {
+  position: static !important;
+  transform: none !important;
+}
+
+.search-by-food-navigation {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.search-by-food-splide__arrows {
+  display: flex;
+  gap: 9px;
+}
+
+.food-name {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 26.4px;
+  color: #424242;
+  text-align: center;
+}
+
 .cta-section {
   display: flex;
   flex-direction: column;
@@ -693,7 +767,7 @@ button.splide__arrow.splide__arrow--prev {
   margin-top: 5rem;
   display: flex;
   flex-direction: column;
-  gap: 4rem;
+  gap: 77px;
 }
 
 .deals-contents {
@@ -762,13 +836,16 @@ button.splide__arrow.splide__arrow--prev {
   color: #ffffff;
 }
 
+.deals-button i {
+  margin-left: 5px;
+}
+
 .features-and-install-app {
-  margin-top: 8rem;
   background: #feefd0;
   padding-top: 7rem;
-  padding-bottom: 7rem;
   padding-left: calc(196px + 1.5vw);
   padding-right: calc(196px + 1.5vw);
+  position: relative;
 }
 
 /* .features-and-install-app-wrapper {
@@ -788,6 +865,10 @@ button.splide__arrow.splide__arrow--prev {
   gap: 80px;
   box-shadow: 0px 27px 82px 0px #ffae0047;
 }
+
+/* .features-and-install-app-wrapper {
+  padding-bottom: 25rem;
+} */
 
 .features img {
   width: 100%;
@@ -819,6 +900,67 @@ button.splide__arrow.splide__arrow--prev {
   background-clip: text;
   color: transparent;
 }
+
+.download-app {
+  display: grid;
+  grid-template-columns: 1fr 0.5fr;
+  margin-top: 6rem;
+}
+
+.download-app-right-part {
+  display: flex;
+  flex-direction: column;
+  gap: 19px;
+  justify-content: center;
+}
+
+.install-app-title {
+  font-size: 1.875rem;
+  font-size: clamp(1.875rem, 1.4374rem + 2.1879999999999997vw, 4.063rem);
+  font-weight: 700;
+  line-height: 72.08px;
+  text-align: left;
+  background: linear-gradient(92.84deg, #ffb800 -47.72%, #ff8a00 136.81%);
+  background-clip: text;
+  color: transparent;
+}
+
+.install-app-text {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 25.2px;
+  color: #827e7e;
+}
+
+.download-buttons {
+  display: flex;
+  align-items: center;
+}
+
+.download-buttons img {
+  width: 200px;
+}
+
+.phone-img {
+  width: 100%;
+  min-width: 383px;
+  position: relative;
+  left: -59px;
+}
+
+img.google-play-img {
+  position: relative;
+  left: -28px;
+}
+
+img.app-store-img {
+  position: relative;
+  left: -81px;
+}
+
+/* .download-app-right-part {
+  max-width: 470px;
+} */
 /* Desktop Stylings */
 @media (max-width: 1700px) {
   .container {
@@ -859,7 +1001,7 @@ button.splide__arrow.splide__arrow--prev {
   }
 
   .feature-text {
-    text-align: center;
+    text-align: left;
   }
 }
 
@@ -1027,6 +1169,39 @@ button.splide__arrow.splide__arrow--prev {
   }
 }
 
+@media (max-width: 850px) {
+  .download-app {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin-top: 6rem;
+  }
+
+  .download-app-right-part {
+    align-items: center;
+    margin-top: 4rem;
+  }
+
+  .download-buttons {
+    flex-direction: column;
+  }
+
+  img.google-play-img,
+  img.app-store-img {
+    position: static;
+    left: 0;
+  }
+  .phone-img {
+    width: 100%;
+    min-width: 100%;
+    position: relative;
+    left: 0;
+  }
+
+  .install-app-text {
+    text-align: center;
+  }
+}
+
 /* Mobile Stylings */
 
 @media (max-width: 767px) {
@@ -1090,7 +1265,8 @@ button.splide__arrow.splide__arrow--prev {
   }
 
   .flash-deals {
-    flex-direction: column;
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 30px;
   }
 
   .banner {
@@ -1179,6 +1355,10 @@ button.splide__arrow.splide__arrow--prev {
     gap: 27px;
   }
 
+  .feature-text {
+    text-align: center;
+  }
+
   .feature,
   .last-feature {
     flex-direction: column;
@@ -1197,5 +1377,10 @@ button.splide__arrow.splide__arrow--prev {
   .features-and-install-app {
     padding-left: 20px;
     padding-right: 20px;
+  }
+
+  .search-by-food-top {
+    flex-direction: column;
+    gap: 30px;
   }
 }
