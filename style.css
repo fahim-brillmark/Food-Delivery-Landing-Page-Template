@@ -283,7 +283,7 @@ nav.top-nav {
 
 .banner-right img {
   width: 100%;
-  filter: drop-shadow(-20px 26px 80px rgba(0, 0, 0, 0.6));
+  filter: drop-shadow(-18px -22px 31px rgba(0, 0, 0, 0.6));
   position: relative;
   top: 3px;
 }
