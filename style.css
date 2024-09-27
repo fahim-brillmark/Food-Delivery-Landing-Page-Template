@@ -495,6 +495,7 @@ nav.top-nav {
   text-align: center;
   color: #ffffff;
   box-shadow: 0px 5px 10px 0px #fd725c38;
+  cursor: pointer;
 }
 
 .splide__arrow {
@@ -649,7 +650,7 @@ button.splide__arrow.splide__arrow--prev {
   padding: 20px 45px;
   border-radius: 14px;
   color: #ffffff;
-  margin-top: 8rem;
+  margin-top: 5rem;
   cursor: pointer;
 }
 
@@ -1374,13 +1375,14 @@ color: #F5F5F5;
 
 
   .download-buttons {
-    flex-direction: column;
+    flex-direction: row;
   }
 
   img.google-play-img,
   img.app-store-img {
     position: static;
     left: 0;
+    width: 146px;
   }
   .phone-img {
     width: 100%;
