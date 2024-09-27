@@ -1609,4 +1609,8 @@ color: #F5F5F5;
   .all-rights-reserved-text,.copyright-symbol,.company-text {
     font-size: 12px;
   }
+
+  .follow-us-text {
+    margin-top: 1.5rem;
+  }
 }
