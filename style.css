@@ -1247,6 +1247,44 @@ footer {
   .nav-search::placeholder {
     font-size: 15px;
   }
+
+  .deals-contents {
+    flex-direction: column;
+  }
+
+  .deals-left-part {
+    width: 100%;
+  }
+
+  .deals-text-wrapper {
+    text-align: center;
+  }
+  .deals-img {
+    width: 100%;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+  }
+  .deals-img-2 {
+    width: 100%;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+  }
+
+  .deals-text-wrapper {
+    margin-bottom: 3rem;
+  }
+
+  .deals-title {
+    font-size: 32px;
+  }
+
+  .deals-text {
+    font-size: 15px;
+  }
 }
 
 @media (max-width: 1210px) {
